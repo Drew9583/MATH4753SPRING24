@@ -1,4 +1,4 @@
-#' Title
+#' Curve
 #'
 #' @param mu
 #' @param sigma
@@ -14,7 +14,6 @@ myncurve = function(mu, sigma, a) {
   yvals = dnorm(xvals, mean=mu, sd=sigma)
   polygon(c(mu - 3*sigma, xvals, a), c(0, yvals, 0), col="lightgray")
   prob = pnorm(a, mean=mu, sd=sigma)
-  abline(v = a, col = "red", lwd = 2)
-  text(a, dnorm(a, mean=mu, sd=sigma), paste("P(X<=", a, ")=", round(prob, 4)), pos=4)
+  text(a, dnorm(a, mean=mu, sd=sigma), expression("P(X<=", a, ")"), pos=4)
   list(mu = mu, sigma = sigma, probability = prob)
 }
