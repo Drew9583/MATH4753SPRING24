@@ -7,7 +7,14 @@
 myncurve(mu, sigma, a)
 }
 \arguments{
-\item{a}{}
+\item{mu}{mu}
+
+\item{sigma}{sigma}
+
+\item{a}{a}
+}
+\value{
+none
 }
 \description{
 Curve

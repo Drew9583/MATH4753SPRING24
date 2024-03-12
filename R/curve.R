@@ -1,10 +1,10 @@
 #' Curve
 #'
-#' @param mu
-#' @param sigma
-#' @param a
+#' @param mu mu
+#' @param sigma sigma
+#' @param a a
 #'
-#' @return
+#' @return none
 #' @export
 #'
 #' @examples
